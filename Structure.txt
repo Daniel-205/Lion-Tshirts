@@ -19,7 +19,8 @@ tshirt-store/
 ├── /controllers/                # Handles business logic
 │   ├── ProductController.php    # Load product data
 │   ├── CartController.php       # Add/remove items
-│   ├── CheckoutController.php   # Validate & process checkout
+│   ├── CheckoutController.php   # Validate & process checkoutgit branch
+
 │   ├── ContactController.php    # Handle contact form
 │
 ├── /models/                     # Database interaction (optional MVC)

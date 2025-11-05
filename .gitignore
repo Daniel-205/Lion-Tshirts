@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Environment files
+.env
+
+# Node modules (if using JS)
+node_modules/
+
+# Vendor (if using Composer in PHP)
+vendor/
+
+# IDE files
+.vscode/
+.idea/
+
+# Cache
+__pycache__/
+*.pyc
+.cache/

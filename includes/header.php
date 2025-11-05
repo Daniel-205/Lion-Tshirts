@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion Tshirts</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+        <div class="container">
+            <p class="fw-bold text-2xl text-indigo-600">LION</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.php">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#contact">Contact</a></li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link position-relative" href="cart.php">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                
+                                <!-- cart icon -->
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+</body>
+</html>
