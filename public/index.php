@@ -1,8 +1,9 @@
 <?php 
-//  WAS
-
  include '../includes/header.php';
-  ?>
+
+include '../includes/dbconfig.php'
+
+?>
 
 
 <body class="font-sans bg-gray-50">
@@ -30,7 +31,35 @@
                 <h2 class="text-center mb-8 text-3xl font-bold" data-aos="fade-up">Featured Products</h2>
                 <div class="row featured-products">
                     <!-- Products will be loaded from database  -->
-                    <!-- WAS -->
+                    <?php 
+                       $sql = "SELECT * FROM products LIMIT 4"; // to load only 4 products form the database
+                        $result = $mysqli->query($sql);
+                        
+                        if ($result && $result->num_rows > 0) {
+                            $delay = 0;
+                            while($row = $result->fetch_assoc()) {
+                                echo '<div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="' . $delay . '">';
+                                echo '    <div class="card h-100 border-0 shadow-sm product-card">';
+                                echo '        <div class="product-image-container">';
+                                // Assuming 'image' column stores the path relative to a base uploads directory e.g., 'uploads/image.jpg'
+                                // If 'image' column contains absolute URLs or needs different handling, adjust accordingly.
+                                                echo '<img src="../' . htmlspecialchars($row["image"]) . '" class="card-img-top" alt="' . htmlspecialchars($row["name"]) . '">';
+                                echo '        </div>';
+                                echo '        <div class="card-body">';
+                                echo '            <h5 class="card-title text-truncate">' . htmlspecialchars($row["name"]) . '</h5>';
+                                echo '            <p class="card-text text-muted text-truncate">Size: ' . htmlspecialchars($row["size"]) . '</p>';
+                                echo '            <a href="shop.php?product_id=' . htmlspecialchars($row["id"]) . '" class="btn btn-sm btn-outline-indigo-600">View Details</a>';
+                                echo '        </div>';
+                                echo '    </div>';
+                                echo '</div>';
+                                $delay += 100;
+                            }
+                        } else {
+                            echo '<p class="text-center text-gray-600">No featured products available at the moment.</p>';
+                        }
+                           
+                    
+                    ?>
                     
                 </div>
                 <div class="text-center mt-6" data-aos="fade-up">
