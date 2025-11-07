@@ -243,10 +243,46 @@ include '../includes/dbconfig.php'
     <script src="assets/js/cart.js"></script>
     <script src="assets/js/main.js"></script>
 
+    
     <script>
-    //    WAS
-    </script>
+        // Add to cart function (dummy for now)
+        function addToCart(productId) {
+            // In real app, this would add to session/cart
+            alert('Added product #' + productId + ' to cart!');
+            // You can connect this to your cart.js later
+        }
 
+        // Scroll-triggered animations (optional enhancement)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+
+            // Parallax effect on hero (optional)
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const hero = document.querySelector('.hero');
+                if (hero) {
+                    hero.style.backgroundPositionY = -(scrolled * 0.3) + 'px';
+                }
+            });
+        });
+
+        // AOS Init (if not already done in main.js)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
 
 
 </body>

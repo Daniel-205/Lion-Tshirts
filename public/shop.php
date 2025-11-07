@@ -76,6 +76,7 @@ $products = $result->fetch_all(MYSQLI_ASSOC);
             $delay += 100;
             endforeach; 
             ?>
+            
         </div>
         
     </div>

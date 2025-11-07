@@ -19,8 +19,6 @@
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Company</h5>
                     <p><a href="index.php#about" class="text-white" style="text-decoration: none;">About Us</a></p>
                 </div>
-
-                
             </div>
 
             <hr class="mb-4">
@@ -49,7 +47,9 @@
                 </div>
             </div>
         </div>
-        <a href="../admin/login.php" class="btn-floating btn-sm text-white" style="font-size: 23px;">Admin</a>
+        
+        <a href="../admin/dashboard.php" class="btn-floating btn-sm text-black " style="font-size: 23px;">Admin</a> 
+
 
     </footer>
 
@@ -58,7 +58,7 @@
     <!-- AOS JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        // WAS
+        AOS.init();
     </script>
 </body>
 </html>
