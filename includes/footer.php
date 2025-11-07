@@ -19,6 +19,7 @@
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Company</h5>
                     <p><a href="index.php#about" class="text-white" style="text-decoration: none;">About Us</a></p>
                 </div>
+
             </div>
 
             <hr class="mb-4">

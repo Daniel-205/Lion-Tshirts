@@ -3,7 +3,7 @@
 
 require_once '../includes/dbconfig.php';
 
-
+//WAS
 
 $sql = "SELECT * FROM products ORDER BY id DESC";
 $result = $mysqli->query($sql);
