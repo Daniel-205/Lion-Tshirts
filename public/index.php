@@ -103,10 +103,7 @@ include '../includes/dbconfig.php'
         </section>
 
 
-        <!-- about us -->
-
-
-        
+        <!-- about us -->  
 
         <section class="section"  id="about">
             <div class="container">
