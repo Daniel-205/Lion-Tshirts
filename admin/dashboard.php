@@ -2,8 +2,11 @@
 
 
 require_once '../includes/dbconfig.php';
+require_once '../includes/functions.php';
 
-//WAS
+
+require_login('admin', 'login.php');
+
 
 $sql = "SELECT * FROM products ORDER BY id DESC";
 $result = $mysqli->query($sql);

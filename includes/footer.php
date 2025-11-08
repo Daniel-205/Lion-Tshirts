@@ -49,7 +49,7 @@
             </div>
         </div>
         
-        <a href="../admin/dashboard.php" class="btn-floating btn-sm text-black " style="font-size: 23px;">Admin</a> 
+        <a href="../admin/login.php" class="btn-floating btn-sm text-black " style="font-size: 23px;">Admin</a> 
 
 
     </footer>
